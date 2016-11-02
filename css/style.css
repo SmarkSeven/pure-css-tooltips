@@ -1,0 +1,66 @@
+@import "https://fonts.googleapis.com/css?family=Lato|Oswald";
+body {
+    max-width: 60%;
+    min-width: 600px;
+    margin: auto;
+    background-color: #F1C40F;
+    font-family: 'lato';
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-weight: 100;
+}
+
+header {
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: 3em;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+.title-blue {
+    font-family: 'Oswald';
+    color: #4862A3;
+    margin: 0;
+    line-height: 1em;
+}
+
+.data-tooltip {
+    position: relative;
+    color: #3B627E;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.data-tooltip:hover::before {
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-color: #4862A3;
+    position: absolute;
+    top: 20px;
+}
+
+.data-tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 1;
+    font-size: 0.7em;
+    background-color: #4862A3;
+    color: #fff;
+    border-radius: 5px;
+    min-width: 15em;
+    font-weight: 100;
+    line-height: 1.3em;
+    padding: 0.8em;
+}
+
+
+/*# sourceMappingURL=style.css.map */
